@@ -1,0 +1,250 @@
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.active {
+  color: #feeda5;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid #feeda5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.8rem;
+  background-color: #2f9cf1;
+  border: 2px solid #2f9cf1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5;
+  border-radius: 64px;
+  color: #fafafa;
+}
+
+.btn:hover {
+  background-color: #fafafa;
+  color: #2f9cf1;
+  border: 2px solid #2f9cf1;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+}
+
+body > * {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12;
+      grid-template-columns: 12;
+  gap: 1rem;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #2f9cf1;
+}
+
+header .header-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+header .header-container h1 {
+  color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1;
+}
+
+header .header-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-size: 1.2rem;
+  letter-spacing: 0.3;
+  list-style: none;
+}
+
+header .header-container li {
+  margin: 0rem 0.7rem;
+  padding: 0 0 0.2rem;
+}
+
+header .header-container li a {
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5;
+}
+
+header .header-container li a:hover {
+  color: #feeda5;
+}
+
+header .header-container li:first-child {
+  margin: 0;
+  padding: 0;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  display: none;
+  cursor: pointer;
+}
+
+header .mob-nav {
+  width: 80%;
+  display: none;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+header .mob-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.3;
+  list-style: none;
+}
+
+header .mob-nav li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+header .mob-nav li a {
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5;
+}
+
+header .mob-nav li a:hover {
+  color: #2f9cf1;
+}
+
+@media (max-width: 900px) {
+  header .header-container li {
+    display: none;
+  }
+  header .header-container li:first-child {
+    display: block;
+    padding: 0.2rem;
+    border: 2px solid #000;
+  }
+  header .mob-nav-show {
+    display: block;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 10rem auto 0;
+}
+
+.container .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1;
+}
+
+.container .hero .hero-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .hero .hero-text h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.5;
+}
+
+.container .hero img {
+  height: 30rem;
+  width: 40rem;
+}
+
+.container h2 {
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.8rem;
+}
+
+.container .card-container {
+  margin: 0 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card-container .card {
+  background-color: #e9e9e9;
+  border-radius: 20px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .card-container .card img {
+  border-radius: 20px;
+}
+
+.container .card-container .card .btn {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.container .card-container .card:not(:last-child) {
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

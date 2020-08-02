@@ -3,11 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFF | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h2>IFF - Indian Football Fans</h2>
-        <nav>
+        <div class="header-container">
+            <h1>Indian Football Fans</h1>
+            
+                <ul>
+                    <li id="menu"><img src="images/bars-solid.svg" id="menu-icon" alt="menu-icon" style="height: 2rem;width: 2rem;"></li>
+                    <li><a href="signup.html">Join</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Fanzone</a></li>
+                    <li><a href="clubs.html">Clubs</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                </ul>
+        </div>
+        
+        <div class="mob-nav">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="clubs.html">Clubs</a></li>
@@ -15,29 +31,41 @@
                 <li><a href="login.html">Login</a></li>
                 <li><a href="singup.html">Join</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Football Platform for fans</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Aliquid illum atque sequi ipsum perferendis harum officia, ipsam iusto.</h3>
-    </main>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Football Platform for fans</h1>
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, dolores sapiente saepe tenetur optio provident consequuntur molestias. Sapiente vero at assumenda sit laboriosam id dolorum obcaecati necessitatibus pariatur. Fugit, ut.</h3>
 
-    <section>
+                <a href="signup.html" class="btn">Join Now</a>
+            </div>
+
+            <img src="images/hero-img-4.jpg" alt="">
+        </div>
+
         <h2>Leagues</h2>
 
-        <div>
-            <h3>Indian Super League</h3>
+        <div class="card-container">
+            <div class="card">
+                <h3>Indian Super League</h3>
 
-            <img src="images/isl.jpg" alt="" width="500" height="300">
+                <img src="images/isl.jpg" alt="" width="500" height="300"><br>
+
+                <a href="#" class="btn">Explore</a>
+            </div>
+
+            <div class="card">
+                <h3>I-League</h3>
+
+                <img src="images/i-league.png" alt="" width="500" height="300"><br>
+
+                <a href="#" class="btn">Explore</a>
+            </div>
         </div>
-
-        <div>
-            <h3>I-League</h3>
-
-            <img src="images/i-league.png" alt="" width="500" height="300">
-        </div>
-    </section>
+    </div>
 </body>
 </html>
 

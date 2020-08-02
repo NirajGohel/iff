@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFF | Login</title>
+    <title>IFF | Join Now</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/signup.css">
 </head>
@@ -13,8 +13,8 @@
             
                 <ul>
                     <li id="menu"><img src="images/bars-solid.svg" id="menu-icon" alt="menu-icon" style="height: 2rem;width: 2rem;"></li>
-                    <li><a href="signup.html">Join</a></li>
-                    <li><a href="login.html" class="active">Login</a></li>
+                    <li><a href="signup.html" class="active">Join</a></li>
+                    <li><a href="login.html">Login</a></li>
                     <li><a href="#">Fanzone</a></li>
                     <li><a href="clubs.html">Clubs</a></li>
                     <li><a href="index.html">Home</a></li>
@@ -33,23 +33,44 @@
     </header>
 
     <div class="container">
-        <h1 class="center">Welcome back </h1>
+        <h1 class="center">Join Now And Support Your Club</h1>
 
         <div class="form-container">
             <div class="form">
                 <form action="#">
+                    Username<br>
+                    <input type="text" name="username" required> <br><br>
+
                     E-mail <br>
-                    <input type="email" name="email" required><br><br>
-            
+                    <input type="email" name="email" required> <br><br>
+
                     Password <br>
                     <input type="password" name="password" required> <br><br>
-                   
+
+                    Confirm Password <br>
+                    <input type="password" name="confirm_password" required> <br><br>
+
+                    Club <br>
+                    <select name="club" id="club" required>
+                        <option value=""></option>
+                        <option value="atkmb">ATKMB</option>
+                        <option value="bfc">BFC</option>
+                        <option value="cfc">CFC</option>
+                        <option value="fcg">FCG</option>
+                        <option value="hfc">HFC</option>
+                        <option value="jfc">JFC</option>
+                        <option value="kbfc">KBFC</option>
+                        <option value="mcfc">MCFC</option>
+                        <option value="nufc">NUFC</option>
+                        <option value="ofc">OFC</option>
+                    </select><br><br>
+
                     <input type="submit" value="Join">
                 </form>
 
                 <div>
-                    Not Have Account? <a href="signup.html">Join</a><br><br>
-                    <a href="index.html" style="display:inline-block;margin-bottom: 1rem;">Home</a>                    
+                    Already Have Account? <a href="login.html">Login</a><br><br>
+                    <a href="index.html" style="display:inline-block;margin-bottom: 1rem;">Home</a>
                 </div>
             </div>
         </div>

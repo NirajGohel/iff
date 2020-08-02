@@ -1,0 +1,131 @@
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.active {
+  color: #feeda5;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid #feeda5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.8rem;
+  background-color: #2f9cf1;
+  border: 2px solid #2f9cf1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5;
+  border-radius: 64px;
+  color: #fafafa;
+}
+
+.btn:hover {
+  background-color: #fafafa;
+  color: #2f9cf1;
+  border: 2px solid #2f9cf1;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+}
+
+body > * {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12;
+      grid-template-columns: 12;
+  gap: 1rem;
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.3;
+}
+
+.container .form-container .form {
+  background-color: #e9e9e9;
+  border-radius: 20px;
+}
+
+.container .form-container .form form {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.container .form-container .form form input[type=text], .container .form-container .form form input[type=password], .container .form-container .form form input[type=email], .container .form-container .form form select {
+  margin: 4 0 0 0;
+  padding: 0.8rem 1rem;
+  width: 20rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+  border-left: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.container .form-container .form form input[type=text]:focus, .container .form-container .form form input[type=password]:focus, .container .form-container .form form input[type=email]:focus, .container .form-container .form form select:focus {
+  border: 2px solid #2f9cf1;
+}
+
+.container .form-container .form form input[type=submit] {
+  height: 3rem;
+  width: 10rem;
+  background-color: #2f9cf1;
+  outline: none;
+  border: 1.5px solid #2f9cf1;
+  border-radius: 64px;
+  font-size: 1.2rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.container .form-container .form form input[type=submit]:hover {
+  background-color: #fafafa;
+  color: #2f9cf1;
+}
+
+.container .form-container .form div {
+  width: 30%;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container .form-container .form div a {
+  color: #2f9cf1;
+}
+
+.container .form-container .form div a:hover {
+  border-bottom: 2px solid #2f9cf1;
+}
+/*# sourceMappingURL=signup.css.map */
