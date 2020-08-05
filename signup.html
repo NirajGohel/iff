@@ -27,7 +27,7 @@
                 <li><a href="clubs.html">Clubs</a></li>
                 <li><a href="#">Fanzone</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="singup.html">Join</a></li>
+                <li><a href="singup.html" class="active">Join</a></li>
             </ul>
         </div>
     </header>
@@ -39,16 +39,16 @@
             <div class="form">
                 <form action="#">
                     Username<br>
-                    <input type="text" name="username" required> <br><br>
+                    <input type="text" name="username" autocomplete="off" required> <br><br>
 
                     E-mail <br>
-                    <input type="email" name="email" required> <br><br>
+                    <input type="email" name="email" autocomplete="off" required> <br><br>
 
                     Password <br>
-                    <input type="password" name="password" required> <br><br>
+                    <input type="password" name="password" autocomplete="off" required> <br><br>
 
                     Confirm Password <br>
-                    <input type="password" name="confirm_password" required> <br><br>
+                    <input type="password" name="confirm_password" autocomplete="off" required> <br><br>
 
                     Club <br>
                     <select name="club" id="club" required>
@@ -74,6 +74,8 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

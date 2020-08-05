@@ -82,7 +82,7 @@ body > * {
 .container .form-container .form form input[type=text], .container .form-container .form form input[type=password], .container .form-container .form form input[type=email], .container .form-container .form form select {
   margin: 4 0 0 0;
   padding: 0.8rem 1rem;
-  width: 20rem;
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   outline: none;
@@ -99,7 +99,8 @@ body > * {
 
 .container .form-container .form form input[type=submit] {
   height: 3rem;
-  width: 10rem;
+  width: 100%;
+  margin: 0 auto;
   background-color: #2f9cf1;
   outline: none;
   border: 1.5px solid #2f9cf1;
@@ -127,5 +128,17 @@ body > * {
 
 .container .form-container .form div a:hover {
   border-bottom: 2px solid #2f9cf1;
+}
+
+@media screen and (max-width: 1200px) {
+  .container .form-container .form form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container .form-container .form form {
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=signup.css.map */

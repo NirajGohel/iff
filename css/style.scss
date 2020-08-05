@@ -47,7 +47,7 @@ header{
             &:first-child{
                 margin: 0;
                 padding: 0;
-                order: -1;
+                // order: -1;
                 display: none;
                 cursor: pointer;
             }
@@ -63,30 +63,33 @@ header{
         ul{ 
             display: flex;
             margin: 0;
-            padding: 0;
-            font-size: 1.2rem;
-            letter-spacing: 0.3;
+            font-size: 1.3rem;
+            font-family: 'Roboto', sans-serif;
             list-style: none;
         }
     
         li{
             flex: 1;
             text-align: center;
-
+            
             a{
-                font-size: 1.3rem;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: 0.5;
                 
                 &:hover{
-                    color: $light-blue;
+                    color: $yellow;
                 }
+            }
+
+            @media screen and (max-width: 950px){
+                &:last-child{
+                    text-align: left;
+                }
+                
             }
         }
     }
 
     //Mobile Device - Header
-    @media (max-width: 900px){
+    @media screen and (max-width: 950px){
         .header-container{
             li{
                 display: none;
@@ -103,6 +106,8 @@ header{
             display: block;
         }
     }
+
+    
 }
 
 .container{
@@ -151,7 +156,9 @@ header{
             flex: 1;
 
             img{
-                border-radius: 20px;
+                height: 20rem;
+                width: 32rem;
+                border-radius: 15px;
             }
 
             .btn{
@@ -162,6 +169,39 @@ header{
 
             &:not(:last-child){
                 margin-right: 1rem;
+            }
+        }
+    }
+}
+
+
+// Mobile Devices - Container
+@media screen and (max-width: 1200px){
+    .container{
+        .hero{
+            flex-direction: column;
+
+            img{
+                width: auto;
+            }
+        }
+
+        .card-container{
+            flex-direction: column;
+
+            .card{
+
+                img{
+                    width: 85%;
+                }
+
+                &:not(:first-child){
+                    margin-top: 1rem;
+                }
+
+                &:not(:last-child){
+                    margin-right: 0rem;
+                }
             }
         }
     }
