@@ -32,23 +32,25 @@
         </div>
     </header>
 
+    <div id="data-info"></div>
+
     <div class="container">
         <h1 class="center">Join Now And Support Your Club</h1>
 
         <div class="form-container">
             <div class="form">
-                <form action="#">
+                <form action="#" method="POST">
                     Username<br>
-                    <input type="text" name="username" autocomplete="off" required> <br><br>
+                    <input type="text" id="username" name="username" autocomplete="off"> <br><br>
 
                     E-mail <br>
-                    <input type="email" name="email" autocomplete="off" required> <br><br>
+                    <input type="email" id="email" name="email" autocomplete="off" required> <br><br>
 
                     Password <br>
-                    <input type="password" name="password" autocomplete="off" required> <br><br>
+                    <input type="password" id="password" name="password" minlength="6" autocomplete="off" required> <br><br>
 
                     Confirm Password <br>
-                    <input type="password" name="confirm_password" autocomplete="off" required> <br><br>
+                    <input type="password" id="confirm_password" name="confirm_password" minlength="6" autocomplete="off" required> <br><br>
 
                     Club <br>
                     <select name="club" id="club" required>
@@ -65,7 +67,7 @@
                         <option value="ofc">OFC</option>
                     </select><br><br>
 
-                    <input type="submit" value="Join">
+                    <input type="submit" value="Join" id="submit">
                 </form>
 
                 <div>
@@ -77,5 +79,6 @@
     </div>
 
     <script src="js/app.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 </html>

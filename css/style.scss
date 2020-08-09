@@ -125,7 +125,7 @@ header{
             h3{
                 margin: 0;
                 padding: 0;
-                font-weight: 500;
+                font-weight: normal;
                 font-size: 1.2rem;
                 letter-spacing: 0.5;
             }
@@ -176,13 +176,14 @@ header{
 
 
 // Mobile Devices - Container
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 600px){
     .container{
         .hero{
             flex-direction: column;
 
             img{
-                width: auto;
+                width: 20rem;
+                height: 20rem;
             }
         }
 
@@ -192,7 +193,9 @@ header{
             .card{
 
                 img{
-                    width: 85%;
+                    height: 10rem;
+                    width: 90%;
+                    margin: 0 auto;
                 }
 
                 &:not(:first-child){
