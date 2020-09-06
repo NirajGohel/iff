@@ -1,4 +1,4 @@
-{
+/* {
   "name": "iff",
   "version": "1.0.0",
   "description": "",
@@ -11,5 +11,17 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.0.0-alpha1"
+  }
+} */
+
+{
+  "name": "indian-football-fans",
+  "version": "1.0.0",
+  "description": "A Harp App on Heroku",
+  "scripts": {
+      "start": "harp server --port $PORT"
+    },
+  "dependencies": {
+    "harp": "*"
   }
 }
