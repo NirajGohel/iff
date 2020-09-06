@@ -1,211 +1,69 @@
-@import 'variables';
-@import 'global';
+//Colors
+$yellow: rgb(254,237,165);
+$white : #fafafa;
+$light-gray : #e9e9e9;
+$dark-gray : #222;
 
-header{
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    background-color: $light-blue;
-    
-    .header-container{
-        width: 80%;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        padding: 0.5rem 0;
+$primary: #2f9cf1;
 
-        h1{
-            color: $white;
-            font-family: 'Roboto', sans-serif;
-            letter-spacing: 1;
-        }
+//Body
+$body-bg: white;
 
-        ul{ 
-            display: flex;
-            flex: 1;
-            flex-direction: row-reverse;
-            font-size: 1.2rem;
-            letter-spacing: 0.3;
-            list-style: none;
-        }
+//Navbar
+$navbar-brand-font-size: 1.8rem;
+$navbar-padding-y: 1.2rem;
 
-        li{
-            margin:0rem 0.7rem;
-            padding:0 0 0.2rem;
+//Common properties - button
+$btn-border-width: 2px;
+$btn-border-radius: 64px;
+$btn-border-radius-sm: 32px;
+$btn-border-radius-lg: 64px;
 
-            a{
-                font-size: 1.3rem;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: 0.5;
+$btn-line-height: normal;
 
-                &:hover{
-                    color: $yellow;
-                }
-            }
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1.8rem;
+$btn-padding-x-sm: 1rem;
+$btn-padding-y-sm: 0.3rem;
+$btn-padding-x-lg: 1.8rem;
+$btn-padding-y-lg: 0.6rem;
 
-            &:first-child{
-                margin: 0;
-                padding: 0;
-                // order: -1;
-                display: none;
-                cursor: pointer;
-            }
-        } 
-    }
+//Common properties - Input
+$form-label-font-size: 1rem;
 
-    .mob-nav{
-        width: 80%;
-        display: none;
-        margin: 0 auto;
-        padding-bottom: 1rem; 
-    
-        ul{ 
-            display: flex;
-            margin: 0;
-            font-size: 1.3rem;
-            font-family: 'Roboto', sans-serif;
-            list-style: none;
-        }
-    
-        li{
-            flex: 1;
-            text-align: center;
-            
-            a{
-                
-                &:hover{
-                    color: $yellow;
-                }
-            }
+$input-bg: #fafafa;
+$input-border-radius: 10px;
+$input-border-color: #e0e0e0;
 
-            @media screen and (max-width: 950px){
-                &:last-child{
-                    text-align: left;
-                }
-                
-            }
-        }
-    }
+$input-font-size: 1.2rem;
 
-    //Mobile Device - Header
-    @media screen and (max-width: 950px){
-        .header-container{
-            li{
-                display: none;
+$input-focus-border-color: $primary;
+$input-border-width: 2px;
+$input-focus-box-shadow: 0;
 
-                &:first-child{
-                    display: block;
-                    padding:0.2rem;
-                    border: 2px solid #000;
-                }
-            }
-        }
+$form-select-border-radius: 10px;
+$form-select-focus-box-shadow: 0;
 
-        .mob-nav-show{
-            display: block;
-        }
-    }
+// Required
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-    
+//Custom
+.nav-link{
+    font-size: 1.2rem;
 }
 
-.container{
-    width: 80%;
-    margin: 10rem auto 0;
-    
-    .hero{
-        display: flex;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1;
+.btn{
+    color: #fafafa;
 
-        .hero-text{
-            flex: 1;
-
-            h3{
-                margin: 0;
-                padding: 0;
-                font-weight: normal;
-                font-size: 1.2rem;
-                letter-spacing: 0.5;
-            }
-        }
-
-        img{
-            height: 30rem;
-            width: 40rem;
-        }
-    }
-
-    h2{
-        text-align: center;
-        font-family: 'Roboto',sans-serif;
-        font-size: 1.8rem;
-    }
-
-    .card-container{
-        margin: 0 0 2rem;
-        display: flex;
-
-        .card{
-            background-color: $light-gray;
-            border-radius: 20px;
-            font-family: 'Roboto',sans-serif;
-            font-size: 1.3rem;
-            text-align: center;
-            flex: 1;
-
-            img{
-                height: 20rem;
-                width: 32rem;
-                border-radius: 15px;
-            }
-
-            .btn{
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                margin-bottom: 1.2rem;
-            }
-
-            &:not(:last-child){
-                margin-right: 1rem;
-            }
-        }
+    &:hover{
+        background-color: $body-bg;
+        color: $primary;
     }
 }
 
-
-// Mobile Devices - Container
-@media screen and (max-width: 600px){
-    .container{
-        .hero{
-            flex-direction: column;
-
-            img{
-                width: 20rem;
-                height: 20rem;
-            }
-        }
-
-        .card-container{
-            flex-direction: column;
-
-            .card{
-
-                img{
-                    height: 10rem;
-                    width: 90%;
-                    margin: 0 auto;
-                }
-
-                &:not(:first-child){
-                    margin-top: 1rem;
-                }
-
-                &:not(:last-child){
-                    margin-right: 0rem;
-                }
-            }
-        }
-    }
+.footer{
+    padding:10px 0;
+    background-color: #e2e2e2;
+    font-size: 1.2rem;
 }
+

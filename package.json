@@ -1,11 +1,15 @@
 {
-    "name": "indian-football-fans",
-    "version": "1.0.0",
-    "description": "A Harp App on Heroku",
-    "scripts": {
-        "start": "harp server --port $PORT"
-      },
-    "dependencies": {
-      "harp": "*"
-    }
+  "name": "iff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1"
   }
+}

@@ -4,57 +4,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFF | Join Now</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/signup.css">
+    <script src="https://use.fontawesome.com/7b1cae8ae3.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Indian Football Fans</h1>
-            
-                <ul>
-                    <li id="menu"><img src="images/bars-solid.svg" id="menu-icon" alt="menu-icon" style="height: 2rem;width: 2rem;"></li>
-                    <li><a href="signup.html" class="active">Join</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="#">Fanzone</a></li>
-                    <li><a href="clubs.html">Clubs</a></li>
-                    <li><a href="index.html">Home</a></li>
+    <!-- Header(Nav) Section -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Indian Football Fans</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clubs.html">Clubs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fanzone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signup.html">Join</a>
+                    </li>
                 </ul>
+            </div>
         </div>
-        
-        <div class="mob-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="clubs.html">Clubs</a></li>
-                <li><a href="#">Fanzone</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html" class="active">Join</a></li>
-            </ul>
-        </div>
-    </header>
+    </nav>
 
     <div id="data-info"></div>
 
-    <div class="container">
-        <h1 class="center">Join Now And Support Your Club</h1>
+    <!-- Main Content Section -->
+    <div class="container" style="margin: 8rem auto 2rem;">
+        <p class="h2 text-center">Join Now And Support Your Club</p>
 
-        <div class="form-container">
-            <div class="form">
-                <form action="#" method="POST">
-                    Username<br>
-                    <input type="text" id="username" name="username" autocomplete="off"> <br><br>
+        <div class="row justify-content-center my-4">
+            <div class="col-lg-4">
+                <form action="#" method="post">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control mb-3" id="username" name="username" autocomplete="off">
 
-                    E-mail <br>
-                    <input type="email" id="email" name="email" autocomplete="off" required> <br><br>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control mb-3" id="email" name="email" autocomplete="off">
 
-                    Password <br>
-                    <input type="password" id="password" name="password" minlength="6" autocomplete="off" required> <br><br>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control mb-3" id="password" name="password" autocomplete="off">
 
-                    Confirm Password <br>
-                    <input type="password" id="confirm_password" name="confirm_password" minlength="6" autocomplete="off" required> <br><br>
+                    <label for="confirm_password" class="form-label">Confirm Password</label>
+                    <input type="text" class="form-control mb-3" id="confirm_password" name="confirm_password" autocomplete="off">
 
-                    Club <br>
-                    <select name="club" id="club" required>
-                        <option value=""></option>
+                    <label for="club" class="form-label">Club</label>
+                    <select class="form-select mb-3" id="club">
+                        <option selected value=""></option>
                         <option value="atkmb">ATKMB</option>
                         <option value="bfc">BFC</option>
                         <option value="cfc">CFC</option>
@@ -65,20 +72,26 @@
                         <option value="mcfc">MCFC</option>
                         <option value="nufc">NUFC</option>
                         <option value="ofc">OFC</option>
-                    </select><br><br>
+                      </select>
 
-                    <input type="submit" value="Join" id="submit">
+                    <input type="submit" class="btn btn-block btn-primary" value="Join">
                 </form>
 
-                <div>
-                    Already Have Account? <a href="login.html">Login</a><br><br>
-                    <a href="index.html" style="display:inline-block;margin-bottom: 1rem;">Home</a>
+                <div class="text-center">
+                    Already Have An Account? <a href="login.html">Login</a><br>
+                    <a href="index.html">Home</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="js/app.js"></script>
+    <!-- Footer Section -->
+    <div class="container-fluid text-center mt-lg-4 mt-md-4 mt-4 footer">
+        Made with <i class="fa fa-heart" style="color: #2f9cf1"></i>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     <script src="js/signup.js"></script>
 </body>
 </html>
