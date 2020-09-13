@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A Harp App on Heroku",
   "scripts": {
-      "start": "harp server --port $PORT"
-    },
+    "start": "harp server --port $PORT"
+  },
   "dependencies": {
     "harp": "*"
   }
