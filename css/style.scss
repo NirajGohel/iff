@@ -1,8 +1,8 @@
 //Colors
-$yellow: rgb(254,237,165);
-$white : #fafafa;
-$light-gray : #e9e9e9;
-$dark-gray : #222;
+$yellow: rgb(254, 237, 165);
+$white: #fafafa;
+$light-gray: #e9e9e9;
+$dark-gray: #222;
 
 $primary: #2f9cf1;
 
@@ -10,7 +10,7 @@ $primary: #2f9cf1;
 $body-bg: white;
 
 //Navbar
-$navbar-brand-font-size: 1.8rem;
+$navbar-brand-font-size: 1.5rem;
 $navbar-padding-y: 1.2rem;
 
 //Common properties - button
@@ -48,22 +48,21 @@ $form-select-focus-box-shadow: 0;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 //Custom
-.nav-link{
-    font-size: 1.2rem;
+.nav-link {
+  font-size: 1.2rem;
 }
 
-.btn{
-    color: #fafafa;
+.btn {
+  color: #fafafa;
 
-    &:hover{
-        background-color: $body-bg;
-        color: $primary;
-    }
+  &:hover {
+    background-color: $body-bg;
+    color: $primary;
+  }
 }
 
-.footer{
-    padding:10px 0;
-    background-color: #e2e2e2;
-    font-size: 1.2rem;
+.footer {
+  padding: 10px 0;
+  background-color: #e2e2e2;
+  font-size: 1.2rem;
 }
-

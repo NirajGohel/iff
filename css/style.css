@@ -4316,17 +4316,17 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand {
-  padding-top: -0.1rem;
-  padding-bottom: -0.1rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
   margin-right: 1rem;
-  font-size: calc(1.305rem + 0.66vw);
+  font-size: calc(1.275rem + 0.3vw);
   text-decoration: none;
   white-space: nowrap;
 }
 
 @media (min-width: 1200px) {
   .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 

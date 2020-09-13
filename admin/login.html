@@ -2,8 +2,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IFF | Login</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>IFF | Admin Login</title>
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="https://use.fontawesome.com/7b1cae8ae3.js"></script>
   </head>
   <body>
@@ -30,22 +30,22 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="clubs.html">Clubs</a>
+              <a class="nav-link" href="../clubs.html">Clubs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Fanzone</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="login.html">Login</a>
+              <a class="nav-link" href="../login.html">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="signup.html">Join</a>
+              <a class="nav-link" href="../signup.html">Join</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="admin/login.html">Admin</a>
+              <a class="nav-link active" href="#">Admin</a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@
 
     <!-- Main Content Section -->
     <div class="container" style="margin: 8rem auto 2rem">
-      <p class="h2 text-center">Welcome back</p>
+      <p class="h2 text-center">Admin Login</p>
 
       <div class="row justify-content-center my-4">
         <div class="col-lg-4">
@@ -77,16 +77,17 @@
               autocomplete="off"
             />
 
-            <input
+            <!-- <input
               type="submit"
               class="btn btn-block btn-primary"
               value="Login"
-            />
+            /> -->
+
+            <a href="dashboard.html" class="btn btn-block btn-primary">Login</a>
           </form>
 
           <div class="text-center">
-            Not Have An Account? <a href="signup.html">Join</a><br />
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
           </div>
         </div>
       </div>
