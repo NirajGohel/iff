@@ -5,6 +5,7 @@
     <title>IFF | Dashboard</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script src="https://use.fontawesome.com/7b1cae8ae3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Left Navigation -->
@@ -17,7 +18,7 @@
           <h4 class="pt-lg-4 text-light">Indian Football Fans</h4>
 
           <nav class="navbar navbar-dark">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" id="nav">
               <li class="nav-item">
                 <a class="nav-link active" href="#">Dashboard</a>
               </li>
@@ -72,7 +73,7 @@
           </nav>
 
           <!-- Main Content -->
-          <div class="container-fluid mt-lg-4">
+          <div class="container-fluid mt-lg-4" id="overview">
             <p class="h3">Overview</p>
 
             <div class="row">
@@ -122,7 +123,51 @@
             </div>
 
             <div class="row mt-lg-4">
-              <dov class="col">Points Table Will Be Added Later....</dov>
+              <div class="col">Points Table Will Be Added Later....</div>
+            </div>
+          </div>
+
+          <!-- Users Section -->
+          <div class="container-fluid mt-lg-4" id="users" style="display: none">
+            <p class="h3">Manage Users</p>
+
+            <div class="row mt-lg-4">
+              <div class="col">Coming Soon</div>
+            </div>
+          </div>
+
+          <!-- Players Section -->
+          <div
+            class="container-fluid mt-lg-4"
+            id="players"
+            style="display: none"
+          >
+            <p class="h3">Manage Players</p>
+
+            <div class="row mt-lg-4">
+              <div class="col">Coming Soon</div>
+            </div>
+          </div>
+
+          <!-- Clubs Section -->
+          <div class="container-fluid mt-lg-4" id="clubs" style="display: none">
+            <p class="h3">Manage Clubs</p>
+
+            <div class="row mt-lg-4">
+              <div class="col">Coming Soon</div>
+            </div>
+          </div>
+
+          <!-- Fixture Section -->
+          <div
+            class="container-fluid mt-lg-4"
+            id="fixture"
+            style="display: none"
+          >
+            <p class="h3">Manage Fixture</p>
+
+            <div class="row mt-lg-4">
+              <div class="col">Coming Soon</div>
             </div>
           </div>
         </div>
@@ -139,5 +184,67 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
+
+    <!-- jQuery Code -->
+    <script>
+      $(document).ready(function () {
+        $("#nav > li > a").click(function (e) {
+          if (e.target.textContent === "Dashboard") {
+            $("#nav > li > a").removeClass("active");
+            $(this).addClass("active");
+
+            $("#overview").css("display", "block");
+            $("#users").css("display", "none");
+            $("#players").css("display", "none");
+            $("#clubs").css("display", "none");
+            $("#fixture").css("display", "none");
+          }
+
+          if (e.target.textContent === "Users") {
+            $("#nav > li > a").removeClass("active");
+            $(this).addClass("active");
+
+            $("#overview").css("display", "none");
+            $("#users").css("display", "block");
+            $("#players").css("display", "none");
+            $("#clubs").css("display", "none");
+            $("#fixture").css("display", "none");
+          }
+
+          if (e.target.textContent === "Players") {
+            $("#nav > li > a").removeClass("active");
+            $(this).addClass("active");
+
+            $("#overview").css("display", "none");
+            $("#users").css("display", "none");
+            $("#players").css("display", "block");
+            $("#clubs").css("display", "none");
+            $("#fixture").css("display", "none");
+          }
+
+          if (e.target.textContent === "Clubs") {
+            $("#nav > li > a").removeClass("active");
+            $(this).addClass("active");
+
+            $("#overview").css("display", "none");
+            $("#users").css("display", "none");
+            $("#players").css("display", "none");
+            $("#clubs").css("display", "block");
+            $("#fixture").css("display", "none");
+          }
+
+          if (e.target.textContent === "Fixture") {
+            $("#nav > li > a").removeClass("active");
+            $(this).addClass("active");
+
+            $("#overview").css("display", "none");
+            $("#users").css("display", "none");
+            $("#players").css("display", "none");
+            $("#clubs").css("display", "none");
+            $("#fixture").css("display", "block");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
